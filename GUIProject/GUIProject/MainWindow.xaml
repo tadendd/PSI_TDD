@@ -1,0 +1,86 @@
+﻿<Window x:Class="GUIProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUIProject"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1326.751">
+    <Grid x:Name="RateBox" HorizontalAlignment="Left" Margin="0,-32,-7,-4.6" Width="1327">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="18*"/>
+            <RowDefinition Height="337*"/>
+        </Grid.RowDefinitions>
+        <CheckBox x:Name="NeoplasticCheck" Content="Yes" Checked="CheckBox_Checked_1" Margin="110,39.6,1169,511.2" Grid.Row="1"/>
+        <CheckBox x:Name="LDCheck" Content="Yes" Checked="CheckBox_Checked_2" Margin="82,387.6,1207,166.2" Grid.Row="1" RenderTransformOrigin="0.484,1.24"/>
+        <CheckBox x:Name="CHFCheck" Content="Yes" Checked="CheckBox_Checked_3" Margin="138,299.6,1146,246.2" Grid.Row="1" RenderTransformOrigin="0.509,1.022"/>
+        <CheckBox x:Name="CDCheck" Content="Yes" Checked="CheckBox_Checked_4" Margin="150,119.6,1139,433.2" Grid.Row="1"/>
+        <CheckBox x:Name="RenalCheck" Content="Yes" Checked="CheckBox_Checked_5" Margin="88,84.6,1200,468.2" Grid.Row="1" RenderTransformOrigin="0.5,0.5"/>
+        <CheckBox x:Name="AMSCheck" Content="Yes" Checked="CheckBox_Checked_6" Margin="120,230.6,1162,319.2" Grid.Row="1"/>
+        <CheckBox x:Name="XRayCheck" Content="Yes" Checked="CheckBox_Checked_7" Margin="150,184.6,1125,350.2" Grid.Row="1" RenderTransformOrigin="-0.321,0.862"/>
+        <CheckBox x:Name="NHRCheck" Content="Yes" Grid.IsSharedSizeScope="True" Checked="CheckBox_Checked" Margin="136,460.6,1143,86.2" Grid.Row="1"/>
+        <TextBox x:Name="AgeBox" HorizontalAlignment="Left" Height="23" Margin="48,9.8,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <Label Content="Age:" HorizontalAlignment="Left" Margin="0,6.8,0,0" VerticalAlignment="Top" Width="48" Grid.Row="1"/>
+        <RadioButton Content="Female" HorizontalAlignment="Left" Margin="192,6.6,0,0" Grid.Row="1" VerticalAlignment="Top" Height="21" Width="104" Checked="RadioButton_Checked"/>
+        <RadioButton Content="Male" HorizontalAlignment="Left" Margin="192,0,0,529.2" Grid.Row="1" VerticalAlignment="Bottom" Height="20"/>
+        <TextBox x:Name="RateBox1" HorizontalAlignment="Left" Height="23" Margin="436,9.8,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <Label Content="Respiratory Rate:" HorizontalAlignment="Left" Margin="332,6.8,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <Button x:Name="ProcessButton" Content="Process" HorizontalAlignment="Left" Margin="1139,542.8,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Label Content="Patient Temperature:" HorizontalAlignment="Left" Margin="604,6.8,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <TextBox x:Name="TempBox" HorizontalAlignment="Left" Height="23" Margin="737,9.8,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="SBPBox" HorizontalAlignment="Left" Height="23" Margin="466,49.8,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Systolic Blood Pressure:" HorizontalAlignment="Left" Margin="332,49.8,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="Pulse:" HorizontalAlignment="Left" Margin="332,77.8,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="pH:" HorizontalAlignment="Left" Margin="332,102.8,0,0" Grid.Row="1" VerticalAlignment="Top" Width="40"/>
+        <Label Content="BUN:" HorizontalAlignment="Left" Margin="332,128.8,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="Sodium:" HorizontalAlignment="Left" Margin="332,155.8,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="Glucose: " HorizontalAlignment="Left" Margin="332,181.8,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26"/>
+        <Label Content="Hematocrit: " HorizontalAlignment="Left" Margin="332,207.8,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="Partial Pressure of Oxygen:" HorizontalAlignment="Left" Margin="332,238.8,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <TextBox x:Name="PulseBox" HorizontalAlignment="Left" Height="15" Margin="377,80.8,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="PHBox" HorizontalAlignment="Left" Height="23" Margin="363,100.8,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="BUNBox" HorizontalAlignment="Left" Height="23" Margin="369,131.8,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="SodiumBox" HorizontalAlignment="Left" Height="19" Margin="385,159.8,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="GlucoseBox" HorizontalAlignment="Left" Height="17" Margin="390,185.8,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="HematocritBox" HorizontalAlignment="Left" Height="23" Margin="407,210.8,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="82"/>
+        <TextBox x:Name="OxygenBox" HorizontalAlignment="Left" Height="22" Margin="482,242.8,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Altered Mental State" HorizontalAlignment="Left" Margin="2,242.6,0,0" Grid.Row="1" VerticalAlignment="Top" Height="24"/>
+        <CheckBox x:Name="AMSNo" Content="No" HorizontalAlignment="Left" Margin="120,266.6,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.209,1.566" Height="20" Checked="AMSNo_Checked"/>
+        <Label Content="Congestive Heart Failure" HorizontalAlignment="Left" Margin="-3,322.6,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <CheckBox x:Name="CHFNo" Content="No" HorizontalAlignment="Left" Margin="141,335.6,0,0" Grid.Row="1" VerticalAlignment="Top" Height="22" RenderTransformOrigin="0.709,1.664" Checked="CHFNo_Checked"/>
+        <Label Content="Pleural Effusion on X-Ray" HorizontalAlignment="Left" Margin="0,184.6,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <CheckBox x:Name="XRayNo" Content="No" HorizontalAlignment="Left" Margin="150,203.6,0,0" Grid.Row="1" VerticalAlignment="Top" Height="22" Checked="XRayNo_Checked"/>
+        <Label Content="Cerebrovascular Disease" HorizontalAlignment="Left" Margin="0,128.8,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="Renal Disease" HorizontalAlignment="Left" Margin="1,84.8,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <CheckBox x:Name="CDNo" Content="No" HorizontalAlignment="Left" Margin="150,148.6,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="CDNo_Checked"/>
+        <CheckBox x:Name="RDNo" Content="No" HorizontalAlignment="Left" Margin="88,113.6,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.43,1.342" Checked="RDNo_Checked"/>
+        <Label Content="Liver Disease" HorizontalAlignment="Left" Margin="4,399.6,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <CheckBox x:Name="LDNo" Content="No" HorizontalAlignment="Left" Margin="82,425.6,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.488,1.5" Height="24" Checked="LDNo_Checked"/>
+        <Label Content="Nursing Home Resident" HorizontalAlignment="Left" Margin="0,472.6,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <CheckBox x:Name="NHRNo" Content="No" HorizontalAlignment="Left" Margin="136,495.6,0,0" Grid.Row="1" VerticalAlignment="Top" Height="22" Checked="NHRNo_Checked"/>
+        <Label Content="Neoplastic Disease" HorizontalAlignment="Right" Margin="0,39.8,1217,0" Grid.Row="1" VerticalAlignment="Top" Width="110"/>
+        <CheckBox x:Name="NeoplasticNo" Content="No" HorizontalAlignment="Left" Margin="110,65.6,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="NeoplasticNo_Checked"/>
+        <Button x:Name="RecordButton" Content="Record" HorizontalAlignment="Left" Margin="1245,542.8,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <TextBox x:Name="ResultBox" HorizontalAlignment="Left" Height="89" Margin="621,370.6,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="286"/>
+        <Label Content="Result:" HorizontalAlignment="Left" Margin="556,387.6,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Grid HorizontalAlignment="Left" Height="60" Margin="607,221.6,0,0" Grid.Row="1" VerticalAlignment="Top" Width="92">
+            <RadioButton x:Name="mmhgButton" Content="mmhg" HorizontalAlignment="Left" Margin="20,22,0,0" VerticalAlignment="Top" IsChecked="True" />
+            <RadioButton Content="kPa" HorizontalAlignment="Left" Margin="20,42,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_8"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="63" Margin="482,159.6,0,0" Grid.Row="1" VerticalAlignment="Top" Width="101" RenderTransformOrigin="0.359,2.154">
+            <RadioButton Content="mmol/L" HorizontalAlignment="Left" Margin="30,42,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_6"/>
+            <RadioButton Content="mg/dl" HorizontalAlignment="Left" Margin="39,22,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.422,0.145" IsChecked="True"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="59" Margin="502,100.6,0,0" Grid.Row="1" VerticalAlignment="Top" Width="66">
+            <RadioButton Content="mg/dl" HorizontalAlignment="Left" Margin="0,29,0,0" VerticalAlignment="Top" IsChecked="True" />
+            <RadioButton Content="mmol/L" HorizontalAlignment="Left" Margin="0,44,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_4"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="105" Margin="862,6.6,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100">
+            <RadioButton Content="Farenhieht" HorizontalAlignment="Left" Margin="0,24,0,0" VerticalAlignment="Top" Width="85" Checked="RadioButton_Checked_1" RenderTransformOrigin="0.445,1.491"/>
+            <RadioButton Content="Celcius" HorizontalAlignment="Left" Margin="0,9,0,76" IsChecked="True"/>
+        </Grid>
+    </Grid>
+</Window>
+  
+     
+      
